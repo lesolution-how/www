@@ -54,11 +54,6 @@ jobs:
                     Export_baked_state=false,
                     # more parameters can go here
                   )'
-
-
-            - name: Configure git to trust the workspace despite the different owner
-              run:
-                git config --global --add safe.directory "$GITHUB_WORKSPACE"
             - name: Deploy to gh-pages
               uses: JamesIves/github-pages-deploy-action@v4.3.3
               with:
