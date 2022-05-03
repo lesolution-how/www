@@ -38,6 +38,10 @@ using PlutoUI, HypertextLiteral
 	<h4>
 		DiPer.Pics
 	</h4>
+	<p>
+		
+	</p>
+	<a href="./DiPer.Pics.html">Meh Infos</a>
 </article>
 </div>
 
