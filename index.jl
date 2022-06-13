@@ -9,66 +9,153 @@ using PlutoUI, HypertextLiteral
 
 # ╔═╡ c6dd0aae-c93e-11ec-2264-013f62efd009
 @htl("""
-<h1 id="leSolution">leSolution.how</h1>
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
-	#leSolution {
-		font-family: 'Comforter Brush', cursive;
-		font-size: 4.20rem		
-	}
-</style>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+$(embed_display(solu))
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>le</b></span> <span class="w3-hide-small w3-text-light-grey">Solution</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Kränländ</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Diper.pics</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Dinimer.fans</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Wordle Guesser</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Sunny Coffee</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">D'Charte lüge nie</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">coming soon</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">coming soon</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p> the bois mitte fiese projects
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      $(embed_display(noe))
+      <h3>le Noe</h3>
+      <p class="w3-opacity">Solutionist</p>
+      <p>nie fürd fans.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      $(embed_display(tinu))
+      <h3>le Tinu</h3>
+      <p class="w3-opacity">Solutionist</p>
+      <p>Schönä...</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      $(embed_display(sam))
+      <h3>le Säm</h3>
+      <p class="w3-opacity">Solutionist</p>
+      <p>Zieh nä!</p>
+    </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Chum cho lütä, aues angere wird ignoriert</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+</body>
+</html>
 """)
 
-# ╔═╡ d823ac73-fb80-4189-b656-b01fef646fc6
-@htl("""
-<h2>Fiesi Projects:</h2>
-<div class="container">
+solu = let
+	url = "https://i.pinimg.com/originals/69/df/6c/69df6c7427f672402edcbaef9870a90c.png"
+	data = read(download(url))
+	PlutoUI.Show(MIME"image/jpg"(), data)
+end
 
+sam = let
+	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/7/79/Tick_BBS.png/revision/latest?cb=20130503231240&path-prefix=de"
+	data = read(download(url))
+	PlutoUI.Show(MIME"image/jpg"(), data)
+end
 
-<article class="project">
-	<h4>
-		Kränländ
-	</h4>
-	<p>
-		
-	</p>
-	<a href="./Kränländ.html">Meh Infos</a>
-</article>
-<article class="project">
-	<h4>
-		DiPer.Pics
-	</h4>
-	<p>
-		
-	</p>
-	<a href="./DiPer.Pics.html">Meh Infos</a>
-</article>
-</div>
+noe = let
+	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/3/32/Track_BBS.png/revision/latest?cb=20130503231240&path-prefix=de"
+	data = read(download(url))
+	PlutoUI.Show(MIME"image/jpg"(), data)
+end
 
-<style>
-	div.container {
-		display: flex;
-	}
-	div.container > article {
-		margin: 10px;
-	}
-	article.project {
-		width: 50%;
-		padding: 1em;
-		border-radius: 5px;
-	}
-
-	article.project h4::before {
-		content: "🫡";
-	}
-
-	article.project p::first-letter {
-		font-size: 1.5em;
-		font-family: cursive;
-	}
-
-</style>
-""")
+tinu = let
+	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/4/46/Trick_BBS.png/revision/latest?cb=20130503231241&path-prefix=de"
+	data = read(download(url))
+	PlutoUI.Show(MIME"image/jpg"(), data)
+end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
