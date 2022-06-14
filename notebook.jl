@@ -4,44 +4,38 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ dcbe0593-9561-4ad0-b1e1-5a68789e3958
+# ╔═╡ c412ffa0-eb3b-11ec-2088-ddbc7d748fd9
 using PlutoUI, HypertextLiteral
 
-# ╔═╡ 22ee33e2-ec29-11ec-3a5d-c7aba35be817
-
-
-# ╔═╡ 32c06a97-fa15-49fb-bb45-237b3e4ca929
-
-
-# ╔═╡ 47bf7c19-b90e-4928-956a-e444075bc565
+# ╔═╡ 18380ca0-ba75-4f59-bab5-3337a1cb6fb4
 solu = let
 	url = "https://i.pinimg.com/originals/69/df/6c/69df6c7427f672402edcbaef9870a90c.png"
 	data = read(download(url))
 	PlutoUI.Show(MIME"image/jpg"(), data)
 end
 
-# ╔═╡ 3bdb4962-edaa-432f-bfb3-ad0235521832
-noe = let
-	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/3/32/Track_BBS.png/revision/latest?cb=20130503231240&path-prefix=de"
-	data = read(download(url))
-	PlutoUI.Show(MIME"image/jpg"(), data)
-end
-
-# ╔═╡ b8e84022-ed34-4358-b31c-481f79f78bc4
-tinu = let
-	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/4/46/Trick_BBS.png/revision/latest?cb=20130503231241&path-prefix=de"
-	data = read(download(url))
-	PlutoUI.Show(MIME"image/jpg"(), data)
-end
-
-# ╔═╡ 6349dd84-36e9-4807-853e-d7325da7e459
+# ╔═╡ e21629f2-238e-495b-a773-f0d447dc2fed
 sam = let
 	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/7/79/Tick_BBS.png/revision/latest?cb=20130503231240&path-prefix=de"
 	data = read(download(url))
 	PlutoUI.Show(MIME"image/jpg"(), data)
 end
 
-# ╔═╡ 9a53968d-87f0-4e81-b1ff-f2a5940ef32a
+# ╔═╡ 54f0bc3c-ddc1-46c0-a238-c8b0dff97c40
+noe = let
+	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/3/32/Track_BBS.png/revision/latest?cb=20130503231240&path-prefix=de"
+	data = read(download(url))
+	PlutoUI.Show(MIME"image/jpg"(), data)
+end
+
+# ╔═╡ e42d7aea-d51a-49ff-a158-9b99364bf02d
+tinu = let
+	url = "https://static.wikia.nocookie.net/kingdom-hearts/images/4/46/Trick_BBS.png/revision/latest?cb=20130503231241&path-prefix=de"
+	data = read(download(url))
+	PlutoUI.Show(MIME"image/jpg"(), data)
+end
+
+# ╔═╡ 553c6c8e-628a-4244-a22f-33c94c746b70
 @htl("""
 <head>
 <title>W3.CSS Template</title>
@@ -203,9 +197,9 @@ uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
-git-tree-sha1 = "eb7f0f8307f71fac7c606984ea5fb2817275d6e4"
+git-tree-sha1 = "0f4e115f6f34bbe43c19751c90a38b2f380637b9"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
-version = "0.11.4"
+version = "0.11.3"
 
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -302,9 +296,9 @@ uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
 
 [[deps.Parsers]]
 deps = ["Dates"]
-git-tree-sha1 = "0044b23da09b5608b4ecacb4e5e6c6332f833a7e"
+git-tree-sha1 = "1285416549ccfcdf0c50d4997a94331e88d68413"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.3.2"
+version = "2.3.1"
 
 [[deps.Pkg]]
 deps = ["Artifacts", "Dates", "Downloads", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
@@ -392,13 +386,11 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 """
 
 # ╔═╡ Cell order:
-# ╠═22ee33e2-ec29-11ec-3a5d-c7aba35be817
-# ╠═dcbe0593-9561-4ad0-b1e1-5a68789e3958
-# ╟─9a53968d-87f0-4e81-b1ff-f2a5940ef32a
-# ╠═32c06a97-fa15-49fb-bb45-237b3e4ca929
-# ╠═47bf7c19-b90e-4928-956a-e444075bc565
-# ╠═3bdb4962-edaa-432f-bfb3-ad0235521832
-# ╠═b8e84022-ed34-4358-b31c-481f79f78bc4
-# ╠═6349dd84-36e9-4807-853e-d7325da7e459
+# ╠═c412ffa0-eb3b-11ec-2088-ddbc7d748fd9
+# ╠═553c6c8e-628a-4244-a22f-33c94c746b70
+# ╠═18380ca0-ba75-4f59-bab5-3337a1cb6fb4
+# ╠═e21629f2-238e-495b-a773-f0d447dc2fed
+# ╠═54f0bc3c-ddc1-46c0-a238-c8b0dff97c40
+# ╠═e42d7aea-d51a-49ff-a158-9b99364bf02d
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
